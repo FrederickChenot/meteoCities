@@ -1,3 +1,42 @@
+# Create React App (CRA)
+
+
+https://create-react-app.dev/
+
+## Quick start
+Pour créer un projet:
+> `yarn create react-app <nomDeMonApp>`
+> `cd <nomDeMonApp>`
+
+Démarrer le projet:
+> `yarn start`
+
+### Sass
+Si on veut utiliser des fichier sass, on dois ajouter le loader pour sass: `yarn add sass --dev`
+
+## Eslint
+Eslint est déjà en partit installé par CRA, si on veut pouvoir préciser nos propres regles de syntaxe on dois initialiser eslint.
+
+Pour initialiser eslint, on fait:
+> `yarn add eslint --save-dev`
+> `yarn create @eslint/config`
+> On choisi le framework react
+> puis on installe les eventuelles dependances necessaire à notre config (exemple: `yarn add eslint-config-airbnb --dev `)
+
+## Dependances utiles
+```bash
+yarn add classnames prop-types axios
+yarn add sass --dev
+```
+
+## Variable d'env
+Pour utiliser une variable d'environnement avec CRA, il faut obligatoirement la nommer en commencant par `REACT_APP_`
+
+On créer un `.env.dist` avec le nom des variables d'environnement necessaire mais sans les valeurs. Et on créer un fichier `.env` propre à chaque devellopeur sur sa machine, ces fichiers `.env` ne sont pas commit, ils sont dans le `.gitignore`
+> NB: dotenv est inclue dans CRA par defaut
+
+Il est possible grace à dotenv d'avoir des fichiers d'environnement spécifique à l'environnment. En creant par exemple un fichier `.env.production` ou `.env.development`, on peut ainsi donner des variables qui ne seront utilisé que pour tel ou tel environnement.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
