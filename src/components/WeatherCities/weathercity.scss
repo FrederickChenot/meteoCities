@@ -1,0 +1,28 @@
+.weathercity {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border: solid 1px rgb(173, 101, 101);
+    border-radius: 1em;
+    margin: 0.5em;
+    background-color: rgb(209, 221, 221);
+
+
+}
+
+.city {
+    text-align: center;
+    width: auto;
+    height: auto;
+    color: black;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.meteowidget-temperature {
+    display: flex;
+    justify-content: center;
+    color: rgb(173, 101, 101);
+    font-size: 2em;
+    padding: 1em;
+}
