@@ -9,8 +9,6 @@ function plafondNuageux(temp, humidity) {
   const numerateur = ((17.27 * temp / (237.7 + temp)) + Math.log(humidity));
   const pointDeRosee = (b * numerateur) / (a - numerateur);
   const plafond = -(((temp - pointDeRosee) * 400) / convertionPiedEnMetre);
-  console.log(plafond);
-  console.log('point de rose', pointDeRosee);
   return plafond;
 }
 export default plafondNuageux;
